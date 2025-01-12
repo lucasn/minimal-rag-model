@@ -1,0 +1,17 @@
+Query: When do farmers sow sugar beet in Holland?
+Default response: In the Netherlands (Holland), sugar beet is typically sown in late summer to early fall, around August or September. This allows the crop to mature during the following spring and summer, when the soil temperature is optimal for growth.
+
+More specifically, the exact sowing date may vary depending on factors such as weather conditions, soil quality, and regional differences. However, in general, sugar beet farmers in the Netherlands aim to sow their crop around late August to early September, with the optimal sowing window being around August 20 to September 10.
+
+This timing allows the sugar beet to develop its root system during the winter months, and then grow its leaves and produce its sweet, juicy roots during the spring and summer when the weather is warmer and sunnier.
+RAG response: According to the provided context, farmers in Holland typically sow sugar beet around April 11, which is earlier than the average sowing date of April 14.
+
+
+Query: Name a finance minister of West Germany.
+Default response: One notable finance minister of West Germany was Helmut Schmidt, who served from 1969 to 1972. He was also the Chancellor of West Germany from 1974 to 1982.
+RAG response: The finance minister of West Germany mentioned in the article is Gerhard Stoltenberg.
+
+
+Query: What was the inflation rate in Indonesia in 1986?
+Default response: According to the World Bank, the inflation rate in Indonesia in 1986 was around 5.8%.
+RAG response: According to the article, the inflation rate in Indonesia in 1986/87 was 8.8%.

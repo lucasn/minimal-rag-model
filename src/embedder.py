@@ -7,7 +7,7 @@ from nltk.corpus import reuters
 from utils import get_embedding_function
 
 
-def main(nltk_download=False):
+def main(nltk_download=True):
     if nltk_download:
         nltk.download('reuters')
         nltk.download('punkt')
