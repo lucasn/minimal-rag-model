@@ -7,7 +7,7 @@ from utils import get_embedding_function, get_api_key
 
 def response(model, query):
     response = model.invoke([
-            {"role": "system", "content": "You are a helpful assistant."},
+            {"role": "system", "content": "You are a helpful assistant. Give a short answer."},
             {"role": "user", "content": f"{query}"},
         ])
     return response.content
@@ -15,7 +15,7 @@ def response(model, query):
 
 def rag_response(model, query, context):
     response = model.invoke([
-            {"role": "system", "content": "You are a helpful assistant. You can use the context provided to answer."},
+            {"role": "system", "content": "You are a helpful assistant. Give a short answer. You can also use the context provided to answer."},
             {"role": "user", "content": f"query: {query}. context: {context}"},
         ])
     return response.content
@@ -36,7 +36,7 @@ def main():
 
     model = ChatGroq(model="llama3-8b-8192", api_key=get_api_key())
 
-    query = "When do farmers sow sugar beet in Holland?"
+    query = "Who was the most important person in england?"
     contexts = get_rag_context(query, client)
     default_response = response(model, query)
     ragged_response = rag_response(model, query, ";".join(contexts))
